@@ -1,0 +1,217 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120436611-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120436611-3');
+</script>
+
+<html>
+  <script type="text/javascript" src="scripts/hideblock.js"></script>
+  <head>
+    <title>Wentao Yuan (&#34945;&#25991;&#38892;)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width=60%" align="left" valign="middle">
+          <p align="center">
+            <name>Wentao Yuan </name><cname>(&#34945;&#25991;&#38892;)</cname>
+          </p>
+          <p>I am a first-year PhD student in the <a href="https://rse-lab.cs.washington.edu">RSE-Lab</a> at the University of Washington, working with Prof. <a href="https://homes.cs.washington.edu/~fox">Dieter Fox</a>. I am interested in developing algorithms that enable robots to perceive and interact with diverse 3D environments.</p>
+          <p>Before coming to UW, I obtained my M.S. from the <a href="https://ri.cmu.edu">Robotics Institute</a> at Carnegie Mellon University advised by Prof. <a href="https://cs.cmu.edu/~hebert">Martial Hebert</a>. Before that, I got my B.A. in Computer Science and Mathematics from <a href="https://www.pomona.edu">Pomona College</a>.</p>
+          <p align=center>
+            <a href="mailto:wentaoy@cs.washington.edu">Email</a> &nbsp/&nbsp
+            <a href="CV.pdf">CV</a> &nbsp/&nbsp
+            <a href="https://github.com/wentaoyuan">GitHub</a> &nbsp/&nbsp
+            <a href="https://scholar.google.com/citations?user=PZZZG6YAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+            <a href="https://linkedin.com/in/wentaoyuan">LinkedIn</a>
+          </p>
+        </td>
+        <td width="30%" align="right" class="image_container">
+          <img src="images/profile0.jpg" class="headshot" width=270 onmouseover="this.src='images/profile1.jpg';" onmouseout="this.src='images/profile0.jpg';">
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" align="center">
+      <tr>
+        <td>
+          <hr>
+          <heading>Publications</heading>
+          <table>
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/teaser.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>Iterative Transformer Network for 3D Point Cloud</papertitle><br>
+                <strong>Wentao Yuan</strong>, David Held, Christoph Mertz, Martial Hebert<br>
+                <em>CVPR Workshop on 3D Scene Understanding for Vision, Graphics, and Robotics</em>, 2019<br>
+                <a href="https://arxiv.org/pdf/1811.11209">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('cvpr19itnetAbs')">abstract</a> &nbsp/&nbsp
+                <a href="https://github.com/wentaoyuan/it-net">code</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('cvpr19itnetBib')">bibtex</a>
+                </p>
+                <p><em id="cvpr19itnetAbs">
+                  3D point cloud is an efficient and flexible representation of 3D structures. Recently, neural networks operating on point clouds have shown superior performance on 3D understanding tasks such as shape classification and part segmentation. However, performance on such tasks is evaluated on complete shapes aligned in a canonical frame, while real world 3D data are partial and unaligned. A key challenge in learning from partial, unaligned point cloud data is to learn features that are invariant or equivariant with respect to geometric transformations. To address this challenge, we propose the Iterative Transformer Network (IT-Net), a network module that canonicalizes the pose of a partial object with a series of 3D rigid transformations predicted in an iterative fashion. We demonstrate the efficacy of IT-Net as an anytime pose estimator from partial point clouds without using complete object models. Further, we show that IT-Net achieves superior performance over alternative 3D transformer networks on various tasks, such as partial shape classification and object part segmentation.
+                </em></p>
+                <pre id="cvpr19itnetBib">
+                  @article{yuan2018iterative,
+                    title={Iterative Transformer Network for 3D Point Cloud},
+                    author={Yuan, Wentao and Held, David and Mertz, Christoph and Hebert, Martial},
+                    journal={arXiv preprint arXiv:1811.11209},
+                    year={2018}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('cvpr19itnetAbs');
+                hideblock('cvpr19itnetBib');
+              </script>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/pcn.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>PCN: Point Completion Network</papertitle><br>
+                <strong>Wentao Yuan</strong>, Tejas Khot, David Held, Christoph Mertz, Martial Hebert<br>
+                <em>International Conference on 3D Vision (3DV)</em>, 2018 <highlight1>(Oral)</highlight1><br>
+                <highlight2>[Best Paper Honorable Mention]</highlight2><br>
+                <a href="https://arxiv.org/pdf/1808.00671.pdf">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('3dv18pcnAbs')">abstract</a> &nbsp/&nbsp
+                <a href="https://github.com/wentaoyuan/pcn">code</a> &nbsp/&nbsp
+                <a href="https://wentaoyuan.github.io/pcn">project page</a> &nbsp/&nbsp
+                <a href="https://drive.google.com/file/d/1fRVUOp5rTT-Q5JdxKKB4-zB5mW1Oa2AW/view?usp=sharing">slides</a> &nbsp/&nbsp
+                <a href="https://drive.google.com/file/d/14K6zTdLpLxzrkynHWyfQefmJ-YnBbo_s/view?usp=sharing">poster</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('3dv18pcnBib')">bibtex</a>
+                </p>
+                <p><em id="3dv18pcnAbs">
+                  Shape completion, the problem of estimating the complete geometry of objects from partial observations, lies at the core of many vision and robotics applications. In this work, we propose Point Completion Network (PCN), a novel learning-based approach for shape completion. Unlike existing shape completion methods, PCN directly operates on raw point clouds without any structural assumption (e.g. symmetry) or annotation (e.g. semantic class) about the underlying shape. It features a decoder design that enables the generation of fine-grained completions while maintaining a small number of parameters. Our experiments show that PCN produces dense, complete point clouds with realistic structures in the missing regions on inputs with various levels of incompleteness and noise, including cars from LiDAR scans in the KITTI dataset.
+                </em></p>
+                <pre id="3dv18pcnBib">
+                  @inproceedings{yuan2018pcn,
+                    title={PCN: Point Completion Network},
+                    author={Yuan, Wentao and Khot, Tejas and Held, David and Mertz, Christoph and Hebert, Martial},
+                    booktitle={2018 International Conference on 3D Vision (3DV)},
+                    pages={728--737},
+                    year={2018},
+                    organization={IEEE}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('3dv18pcnAbs');
+                hideblock('3dv18pcnBib');
+              </script>
+            </tr>
+
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/shipwreck.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>Intelligent Shipwreck Search Using Autonomous Underwater Vehicles</papertitle><br>
+                Jeffrey Rutledge*, <strong>Wentao Yuan*</strong>, Jane Wu, Sam Freed, Amy Lewis, Zoe Wood, Timmy Gambin, Christopher Clark<br>
+                <em>International Conference on Robotics and Automation (ICRA)</em>, 2018<br>
+                <a href="https://www.lair.hmc.edu/s/icra_2018_rutledge.pdf">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('icra18shipAbs')">abstract</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('icra18shipBib')">bibtex</a>
+                </p>
+                <p><em id="icra18shipAbs">
+                  This paper presents an autonomous robot system that is designed to autonomously search for and geo-localize potential underwater archaeological sites. The system, based on Autonomous Underwater Vehicles, invokes a multi-step pipeline. First, the AUV constructs a high altitude scan over a large area to collect low-resolution side scan sonar data. Second, image processing software is employed to automatically detect and identify potential sites of interest. Third, a ranking algorithm assigns importance scores to each site. Fourth, an AUV path planner is used to plan a time-limited path that visits sites with a high importance at a low altitude to acquire high-resolution sonar data. Last, the AUV is deployed to follow this path. This system was implemented and evaluated during an archaeological survey located along the coast of Malta. These experiments demonstrated that the system is able to identify valuable archaeological sites accurately and efficiently in a large previously unsurveyed area. Also, the planned missions led to the discovery of a historical plane wreck whose location was previously unknown.
+                </em></p>
+                <pre id="icra18shipBib">
+                  @inproceedings{rutledge2018intelligent,
+                    title={Intelligent Shipwreck Search Using Autonomous Underwater Vehicles},
+                    author={Rutledge, Jeffrey and Yuan, Wentao and Wu, Jane and Freed, Sam and Lewis, Amy and Wood, Zo{\"e} and Gambin, Timmy and Clark, Christopher},
+                    booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)},
+                    pages={1--8},
+                    year={2018},
+                    organization={IEEE}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('icra18shipAbs');
+                hideblock('icra18shipBib');
+              </script>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <hr>
+          <heading>Projects</heading>
+          <table>
+            <tr>
+              <td width="50%" valign="top">
+                <papertitle>Point Cloud Semantic Segmentation using Graph Convolutional Network</papertitle></br>
+                <p><img src="images/segmentation.png" width="200"></p>
+                <p>
+                <a href="https://wentaoyuan.github.io/gcn.pdf">pdf</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('seggcn')">abstract</a> &nbsp/&nbsp
+                <a href="https://github.com/wentaoyuan/pcd_seg">code</a> 
+                </p>
+                <p><em id="seggcn">
+                  We explore a new way of converting point clouds to a representation suitable for deep learning, without destroying any geometric information. Specifically, we connect neighbouring points in a point cloud to form an undirected graph. Although graphs lack the translational-invariant structure just as point clouds, there has been a line of work  that extends CNNs to graphs by defining convolution in the spectral domain. The aim of this project is to investigate the effectiveness of these spectral CNNs on the task of point cloud semantic segmentation.
+                </em></p>
+              </td>
+              <td width="50%" valign="top">
+                <papertitle>Active Neural Localization in Noisy Environments</papertitle></br>
+                <p><img src="images/localization.png" width="300"></p>
+                <p>
+                <a href="https://wentaoyuan.github.io/neural_loc.pdf">pdf</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('nloc')">abstract</a> &nbsp/&nbsp
+                <a href="https://github.com/wentaoyuan/neural-localization">code</a> 
+                </p>
+                <p><em id="nloc">
+                  Localization, the problem of estimating the location of the robot given a map and a sequence of observations, is a fundamental problems in mobile robotics. Most traditional localization methods are passive, i.e. the robot does not have the ability to adjust its action based on its observations. The recently proposed active neural localization algorighm combines deep neural networks with Bayes filter to perform efficient active localization. In this project, we seek to extend active neural localization in noisy environments, where Gaussian noises are added to both the position and the observation of the agent. A series of experiments show that our active localization method outperforms passive localization methods in both noiseless and noisy environments.
+                </em></p>
+              </td>
+              <script language="javascript" type="text/javascript">
+                hideblock('seggcn');
+                hideblock('nloc');
+              </script>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <hr>
+          <heading>Experiences</heading>
+          <ul>
+            <li>2019.9 - present: Graduate Research Assistant, University of washington</li>
+            <li>2019.6 - 2019.9: Research Intern, NVIDIA, Santa Clara</li>
+            <li>2017.9 - 2019.5: Graduate Research Assistant, Carnegie Mellon University</li>
+            <li>2017.5 - 2017.8: Undergraduate Research Assistant, Harvey Mudd College</li>
+            <li>2016.5 - 2016.8: Software Engineering Intern, Google, New York</li>
+            <li>2015.5 - 2015.8: Engineering Practicum Intern, Google, Kirkland</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- <tr>
+        <td>
+          <hr>
+          <heading>Personal</heading>
+          <p>I enjoy singing, playing guitar and soccer. I am also a PADI AOW Diver.</p>
+        </td>
+      </tr> -->
+    </table>
+  </body>
+</html>

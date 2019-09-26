@@ -1,0 +1,60 @@
+table {max-width:900px}
+td {padding:7px}
+td div {padding:7px}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+    font-family: 'HelveticaNeue-Light', 'Lucida Grande', 'Hiragino Sans GB', sans-serif;
+    font-weight:400;
+    font-size:16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+}
+
+pre {
+    white-space: pre-line;
+}
+
+.headshot {
+    border-radius: 50%;
+}
+
+name {
+    font-size: 32px;
+    font-weight:500;
+}
+
+cname {
+    font-size: 24px;
+    font-weight:400;
+}
+
+heading {
+    font-size: 22px;
+    font-weight:500;
+}
+
+papertitle {
+    font-weight: 700;
+    color: #1772d0;
+}
+
+highlight1 {
+    font-weight: 700;
+    color: #FF8080;
+}
+
+highlight2 {
+    font-weight: 700;
+    color: #008080;
+}

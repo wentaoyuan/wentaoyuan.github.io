@@ -1,0 +1,195 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120436611-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120436611-4');
+</script>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<link rel="StyleSheet" href="style.css" type="text/css" media="all" />
+
+<html>
+  <head>
+    <title>Point Completion Network</title>
+    <meta property="og:title" content="Point Completion Network" />
+    <meta property="og:image" content="https://wentaoyuan.github.io/pcn/images/shapenet.png" />
+    <meta property="og:url" content="https://youtu.be/bzJrPQilPxg" />
+  </head>
+
+  <body>
+    <br>
+    <center>
+      <span style="font-size:42px">PCN: Point Completion Network</span>
+    </center>
+
+    <br>
+    <table align=center width=800px>
+      <tr>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://wentaoyuan.github.io/">Wentao Yuan</a></span>
+          </center>
+        </td>
+
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://tejaskhot.github.io/">Tejas Khot</a></span>
+          </center>
+        </td>
+
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://davheld.github.io/">David Held</a></span>
+          </center>
+        </td>
+
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://www.ri.cmu.edu/ri-people/christoph-mertz/">Christoph Mertz</a></span>
+          </center>
+        </td>
+
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="https://www.cs.cmu.edu/~hebert/">Martial Hebert</a></span>
+          </center>
+        </td>
+      </tr>
+    </table>
+
+    <table align=center width=700px>
+      <tr>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px">Robotics Institute, Carnegie Mellon University</span>
+          </center>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    <table align=center width=400px>
+      <tr>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="#paper">[Paper]</a></span>
+          </center>
+        </td>
+
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="#code">[Code]</a></span>
+          </center>
+        </td>
+
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:20px"><a href="#video">[Video]</a></span>
+          </center>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    <table align=center width=600px>
+      <tr>
+        <td>
+          <center>
+            <img src = "./images/shapenet.png" height="300px"></img><br>
+          </center>
+        </td>
+      </tr>
+        <td>
+          <center>
+            <span style="font-size:14px"><i>Completion results on ShapeNet objects</i>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+    <hr>
+    <center><h1>Abstract</h1></center>
+    Shape completion, the problem of estimating the complete geometry of objects from partial observations lies at the core of many vision and robotics applications. In this work, we propose Point Completion Network (PCN), a novel learning-based approach for shape completion. While previous learning-based approaches use voxelized representations such as occupancy grids and distance fields, PCN directly takes a partial point cloud as input and generates a dense, complete point cloud without any voxelization. This enables PCN to produce completions of higher quality with fewer parameters. Without any prior structural assumptions (symmetry, planarity, etc) or additional annotations (part segmentation, class label, etc), our method works on inputs of various levels of incompleteness and is robust against noise. Trained on pairs of partial and complete point clouds from synthetic shapes, our model generalizes to novel incomplete shapes including cars from real LiDAR scans in KITTI, producing dense, complete point clouds with realistic structures in the missing regions.
+    <br><br>
+
+    <hr>
+    <table align=center width=600px>
+      <center><h1 id="paper">Paper</h1></center>
+      <tr>
+        <td>
+          <a href="https://arxiv.org/pdf/1808.00671.pdf">
+            <img class="layered-paper-big" style="height:175px" src="./images/page1.png"/></a>
+        </td>
+        <td>
+          <span style="font-size:14pt">W. Yuan, T. Khot, D. Held, C. Mertz, M. Hebert.</span>
+          <br><br>
+          <b><span style="font-size:14pt">PCN: Point Completion Network.</b></span>
+          <br><br>
+          <span style="font-size:14pt">3DV, 2018.</span>
+          <br><br>
+          <a href="https://arxiv.org/abs/1808.00671">[arXiv]</a> &nbsp; &nbsp;
+          <a href="./bibtex.txt">[Bibtex]</a>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+
+    <hr>
+    <center><h1 id="code">Code and Data</h1></center>
+    <table align=center width=800px>
+      <tr>
+        <center>
+          <span style="font-size:28px">
+            <a href='https://github.com/TonythePlaneswalker/pcn'>[GitHub]</a> &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href='https://drive.google.com/open?id=1Af9igOStb6O9YHwjYHOwR0qW4uP3zLA6'>[Google Drive]</a>
+          </span>
+        </center>
+      </tr>
+    </table>
+    <br>
+
+    <table align=center width=1000px>
+      <tr>
+        <center>
+          <img class="round" style="height:400" src="./images/architecture.png"/>
+        </center>
+      </tr>
+    </table>
+    <br>
+
+    <hr>
+    <center><h1 id="video">Results on KITTI</h1></center>
+    <table align=center width=600px>
+      <tr>
+        <td width=600px>
+          <center>
+            <div class="video">
+              <iframe width="720" height="400" src="https://www.youtube.com/embed/bzJrPQilPxg" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+    <hr>
+    <table align=center width=900px>
+      <tr>
+        <td>
+          <left>
+            <center><h1>Acknowledgements</h1></center>
+            This project is funded in part by Carnegie Mellon University's Mobility21 National University Transportation Center, which is sponsored by the US Department of Transportation. We would also like to thank Adam Harley, Leonid Keselman and Rui Zhu for their helpful comments and suggestions. The website is modified from this <a href="https://richzhang.github.io/colorization/">template</a>.
+          </left>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+  </body>
+</html>
