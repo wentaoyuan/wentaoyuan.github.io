@@ -1,0 +1,4 @@
+@article{yuandeepgmr,
+  title={DeepGMR: Learning Latent Gaussian Mixture Models for Registration},
+  author={Yuan, Wentao and Eckart, Benjamin and Kim, Kihwan and Jampani, Varun and Fox, Dieter and Kautz, Jan}
+}

@@ -25,7 +25,7 @@
           <p>I am a first-year PhD student in the <a href="https://rse-lab.cs.washington.edu">RSE-Lab</a> at the University of Washington, working with Prof. <a href="https://homes.cs.washington.edu/~fox">Dieter Fox</a>. I am interested in developing algorithms that enable robots to perceive and interact with diverse 3D environments.</p>
           <p>Before coming to UW, I obtained my M.S. from the <a href="https://ri.cmu.edu">Robotics Institute</a> at Carnegie Mellon University advised by Prof. <a href="https://cs.cmu.edu/~hebert">Martial Hebert</a>. Before that, I got my B.A. in Computer Science and Mathematics from <a href="https://www.pomona.edu">Pomona College</a>.</p>
           <p align=center>
-            <a href="CV.pdf">CV</a> &nbsp/&nbsp
+            <a href="documents/CV.pdf">CV</a> &nbsp/&nbsp
             <a href="https://github.com/wentaoyuan">GitHub</a> &nbsp/&nbsp
             <a href="https://scholar.google.com/citations?user=PZZZG6YAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
             <a href="https://linkedin.com/in/wentaoyuan">LinkedIn</a>
@@ -45,7 +45,40 @@
           <table>
             <tr>
               <td width="25%" valign="top">
-                <p><img src="images/teaser.png" width="300"></p>
+                <p><img src="images/deepgmr.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>DeepGMR: Learning Latent Gaussian Mixture Models for Registration</papertitle><br>
+                <strong>Wentao Yuan</strong>, Ben Eckart, Kihwan Kim, Varun Jampani, Dieter Fox, Jan Kautz<br>
+                <em>European Conference on Computer Vision (ECCV)</em>, 2020 <highlight1>(Spotlight)</highlight1><br>
+                <a href="https://arxiv.org/">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('eccv2020deepgmrAbs')">abstract</a> &nbsp/&nbsp
+                <a href="https://github.com/wentaoyuan/deepgmr">code</a> &nbsp/&nbsp
+                <a href="documents/deepgmr_slides.pdf">slides</a> &nbsp/&nbsp
+                <a href="https://youtu.be/xlUywtzDjOQ">video</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('eccv2020deepgmrBib')">bibtex</a>
+                </p>
+                <p><em id="eccv2020deepgmrAbs">
+                  Point cloud registration is a fundamental problem in 3D computer vision, graphics and robotics. For the last few decades, existing registration algorithms have struggled in situations with large transformations, noise, and time constraints. In this paper, we introduce Deep Gaussian Mixture Registration (DeepGMR), the first learning-based registration method that explicitly leverages a probabilistic registration paradigm by formulating registration as the minimization of KL-divergence between two probability distributions modeled as mixtures of Gaussians. We design a neural network that extracts pose-invariant correspondences between raw point clouds and Gaussian Mixture Model (GMM) parameters and two differentiable compute blocks that recover the optimal transformation from matched GMM parameters. This construction allows the network learn an SE(3)-invariant feature space, producing a global registration method that is real-time, generalizable, and robust to noise. Across synthetic and real-world data, our proposed method shows favorable performance when compared with state-of-the-art geometry-based and learning-based registration methods.
+                </em></p>
+                <pre id="eccv2020deepgmrBib">
+                  @article{yuandeepgmr,
+                    title={DeepGMR: Learning Latent Gaussian Mixture Models for Registration},
+                    author={Yuan, Wentao and Eckart, Benjamin and Kim, Kihwan and Jampani, Varun and Fox, Dieter and Kautz, Jan}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('eccv2020deepgmrAbs');
+                hideblock('eccv2020deepgmrBib');
+              </script>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/it-net.png" width="300"></p>
               </td>
               <td width="75%" valign="top">
                 <p>
@@ -55,7 +88,7 @@
                 <a href="https://arxiv.org/pdf/1811.11209">paper</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('cvpr19itnetAbs')">abstract</a> &nbsp/&nbsp
                 <a href="https://github.com/wentaoyuan/it-net">code</a> &nbsp/&nbsp
-                <a href="https://drive.google.com/open?id=1ZfFEoUfRHslroKGq3NoI7yJeunjicPUB">poster</a>  &nbsp/&nbsp
+                <a href="https://drive.google.com/open?id=1ZfFEoUfRHslroKGq3NoI7yJeunjicPUB">poster</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('cvpr19itnetBib')">bibtex</a>
                 </p>
                 <p><em id="cvpr19itnetAbs">
@@ -161,7 +194,7 @@
                 <papertitle>Point Cloud Semantic Segmentation using Graph Convolutional Network</papertitle></br>
                 <p><img src="images/segmentation.png" width="200"></p>
                 <p>
-                <a href="https://wentaoyuan.github.io/gcn.pdf">pdf</a> &nbsp/&nbsp
+                <a href="documents/gcn.pdf">pdf</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('seggcn')">abstract</a> &nbsp/&nbsp
                 <a href="https://github.com/wentaoyuan/pcd_seg">code</a> 
                 </p>
@@ -173,7 +206,7 @@
                 <papertitle>Active Neural Localization in Noisy Environments</papertitle></br>
                 <p><img src="images/localization.png" width="300"></p>
                 <p>
-                <a href="https://wentaoyuan.github.io/neural_loc.pdf">pdf</a> &nbsp/&nbsp
+                <a href="documents/neural_loc.pdf">pdf</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('nloc')">abstract</a> &nbsp/&nbsp
                 <a href="https://github.com/wentaoyuan/neural-localization">code</a> 
                 </p>
