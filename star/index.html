@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STaR: Self-supervised Tracking and Reconstruction of Rigid Objects in Motion with Neural Rendering</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120436611-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-120436611-3');
+    </script>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+    <script src="video.js"></script>
+
+    <link rel="StyleSheet" href="style.css" type="text/css"/>
+  </head>
+
+  <body>
+    <br>
+    <center>
+      <h1 class="title">STaR</h1>
+      <h1 class="subtitle"><b>S</b>elf-supervised <b>T</b>racking <b>a</b>nd <b>R</b>econstruction of Rigid Objects in Motion with Neural Rendering</h1>
+    </center>
+
+    <br>
+    <div class="container">
+      <table align=center width=100%>
+        <tr>
+          <td align=center width=25%>
+            <center>
+              <span style="font-size:20px"><a href="https://wentaoyuan.github.io">Wentao Yuan</a><sup>1</sup></span>
+            </center>
+          </td>
+          <td align=center width=25%>
+            <center>
+              <span style="font-size:20px"><a href="https://lvzhaoyang.github.io">Zhaoyang Lv</a><sup>2</sup></span>
+            </center>
+          </td>
+          <td align=center width=25%>
+            <center>
+              <span style="font-size:20px"><a href="https://tschmidt23.github.io">Tanner Schmidt</a><sup>2</sup></span>
+            </center>
+          </td>
+          <td align=center width=25%>
+            <center>
+              <span style="font-size:20px"><a href="https://scholar.google.com/citations?user=JVum8voAAAAJ">Steven Lovegrove</a><sup>2</sup></span>
+            </center>
+          </td>
+        </tr>
+      </table>
+
+      <table align=center width=100%>
+        <tr>
+          <td align=center width=50%>
+            <center>
+              <span style="font-size:20px"><sup>1</sup>University of Washington</span>
+            </center>
+          </td>
+          <td align=center width=50%>
+            <center>
+              <span style="font-size:20px"><sup>2</sup>Facebook Reality Labs</span>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br>
+
+    <div class="container">
+      <table align=center width=30%>
+        <tr>
+          <td align=center width=50%>
+            <a href="https://arxiv.org/abs/2101.01602">
+              <img class="layered-paper" width=30% src="images/page1.png"/>
+              <p style="font-size:20px">Paper<br>(arXiv)</p>
+            </a>
+          </td>
+          <td align=center width=50%>
+            <a href="https://github.com/wentaoyuan">
+              <img width=42% src="images/github.png"/>
+              <p style="font-size:20px">Code<br>(coming soon)</p>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container grey_container">
+      <center><h2 class="sectitle">Overview Video</h2></center>
+        <div class="container widget_container">
+          <div class="container video_container">
+            <video controls loop autoplay muted class="on">
+              <source src="videos/overview.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <center><h2 class="sectitle">Abstract</h2></center>
+      <p class="text">
+        We present STaR, a novel method that performs <b>S</b>elf-supervised <b>T</b>racking <b>a</b>nd <b>R</b>econstruction of dynamic scenes with rigid motion from multi-view RGB videos.
+      </p>
+      <p class="text">
+        Without any manual annotation, our method can reconstruct a dynamic scene with a single rigid object in motion by simultaneously decomposing it into its two constituent parts and encoding each with its own neural representation. This is achieved by jointly optimizing the parameters of two neural radiance fields and a set of rigid poses which align the two fields at each frame.
+      </p>
+      <p class="text">
+        On both synthetic and real world datasets, we demonstrate that our method can render photorealistic novel views, where novelty is measured on both spatial and temporal axes. Our factored representation furthermore enables animation of unseen object motion.
+      </p>
+    </div>
+    <br>
+
+    <div class="container grey_container">
+      <center><h2 class="sectitle">4D Novel View Synthesis</h2></center>
+      <p class="text">
+        The following videos show rendering of novel spatial-temporal views on two synthetic (<i>Lamp and Desk</i>, <i>Kitchen Table</i>) and one real-world (<i>Moving Banana</i>) dynamic scenes. The rendered videos are 20x slow motion of the training videos from a continuously varying camera view unseen during training.
+      </p>
+      <div class="container widget_container">
+        <div class="buttons">
+          <button id="nvs_data0" value="lamp_and_desk" class="on">Lamp and Desk</button>
+          <button id="nvs_data1" value="kitchen_table">Kitchen Table</button>
+          <button id="nvs_data2" value="moving_banana">Moving Banana</button>
+        </div>
+        <div class="buttons">
+          <button id="nvs_btn0" value="input">Input</button>
+          <button id="nvs_btn1" value="nerf">NeRF</button>
+          <button id="nvs_btn2" value="nerf-time">NeRF-time</button>
+          <button id="nvs_btn3" value="nerf-w">NeRF-W</button>
+          <button id="nvs_btn4" value="star" class="on"><b>STaR (ours)</b></button>
+          <button id="nvs_btn5" value="gt">Ground Truth</button>
+        </div>
+        <div class="container video_container">
+          <video id="nvs_vid0" controls loop playsinline>
+            <source src="videos/lamp_and_desk_input.mp4" type="video/mp4"/>
+          </video>
+          <video id="nvs_vid1" controls loop playsinline>
+            <source src="videos/lamp_and_desk_nerf.mp4" type="video/mp4"/>
+          </video>
+          <video id="nvs_vid2" controls loop playsinline>
+            <source src="videos/lamp_and_desk_nerf-time.mp4" type="video/mp4"/>
+          </video>
+          <video id="nvs_vid3" controls loop playsinline>
+            <source src="videos/lamp_and_desk_nerf-w.mp4" type="video/mp4"/>
+          </video>
+          <video id="nvs_vid4" controls loop playsinline class="on">
+            <source src="videos/lamp_and_desk_star.mp4" type="video/mp4"/>
+          </video>
+          <video id="nvs_vid5" controls loop playsinline>
+            <source src="videos/lamp_and_desk_gt.mp4" type="video/mp4"/>
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <center><h2 class="sectitle">Animating Unseen Motion</h2></center>
+      <p class="text">
+        STaR's factored representation of motion and appearance allows it to synthesize novel views of animated trajectories of the dynamic object which have not been seen during training, without any 3D ground truth or supervision.
+      </p>
+      <div class="container widget_container">
+        <div class="container video_container">
+          <video controls loop autoplay muted playsinline class="on">
+            <source src="videos/lamp_and_desk_anim.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        <div class="container video_container">
+          <video controls loop autoplay muted playsinline class="on">
+            <source src="videos/moving_banana_anim.mp4" type="video/mp4"/>
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="container grey_container">
+      <center><h2 class="sectitle">Scene Decomposition</h2></center>
+      <p class="text">
+        With the decomposition of static and dynamic components learned by STaR, static background and dynamic foreground can be seamlessly removed during spatial-temporal novel view rendering.
+      </p>
+      <div class="container widget_container">
+        <div class="buttons">
+          <button id="decomp_data0" value="lamp_and_desk" class="on">Lamp and Desk</button>
+          <button id="decomp_data1" value="kitchen_table">Kitchen Table</button>
+          <button id="decomp_data2" value="moving_banana">Moving Banana</button>
+        </div>
+        <div class="buttons">
+          <button id="decomp_btn0" value="dynamic" class="on">Dynamic</button>
+          <button id="decomp_btn1" value="static">Static</button>
+          <button id="decomp_btn2" value="star">Composition</button>
+        </div>
+        <div class="container video_container">
+          <video id="decomp_vid0" controls loop playsinline class="on">
+            <source src="videos/lamp_and_desk_dynamic.mp4" type="video/mp4"/>
+          </video>
+          <video id="decomp_vid1" controls loop playsinline>
+            <source src="videos/lamp_and_desk_static.mp4" type="video/mp4"/>
+          </video>
+          <video id="decomp_vid2" controls loop playsinline>
+            <source src="videos/lamp_and_desk_star.mp4" type="video/mp4"/>
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <center><h2 class="sectitle">Citation</h2></center>
+      <div class="text citation">
+        @article{yuan2021star,<br>
+          &nbsp; &nbsp; title={STaR: Self-supervised Tracking and Reconstruction of Rigid Objects in Motion with Neural Rendering},<br>
+          &nbsp; &nbsp; author={Yuan, Wentao and Lv, Zhaoyang and Schmidt, Tanner and Lovegrove, Steven},<br>
+          &nbsp; &nbsp; journal={arXiv preprint arXiv:2101.01602},<br>
+          &nbsp; &nbsp; year={2021}<br>
+        }
+      </div>
+    </div>
+
+  </body>
+</html>

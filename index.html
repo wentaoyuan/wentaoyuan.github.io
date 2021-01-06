@@ -45,6 +45,40 @@
           <table>
             <tr>
               <td width="25%" valign="top">
+                <p><img src="images/star.gif" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>STaR: Self-supervised Tracking and Reconstruction of Rigid Objects in Motion with Neural Rendering</papertitle><br>
+                <strong>Wentao Yuan</strong>, Zhaoyang Lv, Tanner Schmidt, Steven Lovegrove<br>
+                <em>arXiv</em>, 2021<br>
+                <a href="https://arxiv.org/abs/2101.01602">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('cvpr2020starAbs')">abstract</a> &nbsp/&nbsp
+                <a href="https://github.com">code (coming soon)</a> &nbsp/&nbsp
+                <a href="https://wentaoyuan.github.io/star">project page</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('cvpr2020starBib')">bibtex</a>
+                </p>
+                <p><em id="cvpr2020starAbs">
+                  We present STaR, a novel method that performs Self-supervised Tracking and Reconstruction of dynamic scenes with rigid motion from multi-view RGB videos without any manual annotation. Recent work has shown that neural networks are surprisingly effective at the task of compressing many views of a scene into a learned function which maps from a viewing ray to an observed radiance value via volume rendering. Unfortunately, these methods lose all their predictive power once any object in the scene has moved. In this work, we explicitly model rigid motion of objects in the context of neural representations of radiance fields. We show that without any additional human specified supervision, we can reconstruct a dynamic scene with a single rigid object in motion by simultaneously decomposing it into its two constituent parts and encoding each with its own neural representation. We achieve this by jointly optimizing the parameters of two neural radiance fields and a set of rigid poses which align the two fields at each frame. On both synthetic and real world datasets, we demonstrate that our method can render photorealistic novel views, where novelty is measured on both spatial and temporal axes. Our factored representation furthermore enables animation of unseen object motion.
+                </em></p>
+                <pre id="cvpr2020starBib">
+                  @article{yuan2020star,
+                    title={STaR: Self-supervised Tracking and Reconstruction of Rigid Objects in Motion with Neural Rendering},
+                    author={Yuan, Wentao and Lv, Zhaoyang and Schmidt, Tanner and Lovegrove, Steven},
+                    journal={arXiv preprint arXiv:2101.01602},
+                    year={2021}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('cvpr2020starAbs');
+                hideblock('cvpr2020starBib');
+              </script>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td width="25%" valign="top">
                 <p><img src="images/deepgmr.png" width="300"></p>
               </td>
               <td width="75%" valign="top">
@@ -231,6 +265,7 @@
           <hr>
           <heading>Experiences</heading>
           <ul>
+            <li>2020.6 - 2020.9: Research Intern, Facebook Reality Labs, Redmond</li>
             <li>2019.9 - present: Graduate Research Assistant, University of washington</li>
             <li>2019.6 - 2019.9: Research Intern, NVIDIA, Santa Clara</li>
             <li>2017.9 - 2019.5: Graduate Research Assistant, Carnegie Mellon University</li>
