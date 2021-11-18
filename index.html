@@ -22,7 +22,7 @@
           <p align="center">
             <name>Wentao Yuan </name><cname>(&#34945;&#25991;&#38892;)</cname>
           </p>
-          <p>I am a first-year PhD student in the <a href="https://rse-lab.cs.washington.edu">RSE-Lab</a> at the University of Washington, working with Prof. <a href="https://homes.cs.washington.edu/~fox">Dieter Fox</a>. I am interested in developing algorithms that enable robots to perceive and interact with diverse 3D environments.</p>
+          <p>I am a third-year PhD student in the <a href="https://rse-lab.cs.washington.edu">RSE-Lab</a> at the University of Washington, working with Prof. <a href="https://homes.cs.washington.edu/~fox">Dieter Fox</a>. I am interested in developing algorithms that enable robots to perceive and interact with diverse 3D environments.</p>
           <p>Before coming to UW, I obtained my M.S. from the <a href="https://ri.cmu.edu">Robotics Institute</a> at Carnegie Mellon University advised by Prof. <a href="https://cs.cmu.edu/~hebert">Martial Hebert</a>. Before that, I got my B.A. in Computer Science and Mathematics from <a href="https://www.pomona.edu">Pomona College</a>.</p>
           <p align=center>
             <a href="documents/CV.pdf">CV</a> &nbsp/&nbsp
@@ -45,13 +45,51 @@
           <table>
             <tr>
               <td width="25%" valign="top">
+                <p><img src="images/sornet.mp4" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>SORNet: Spatial Object-Centric Representations for Sequential Manipulation</papertitle><br>
+                <strong>Wentao Yuan</strong>, Chris Paxton, Karthik Desingh, Dieter Fox<br>
+                <em>The Conference on Robot Learning (CoRL)</em>, 2021 <highlight1>(Oral)</highlight1><br>
+                <highlight2>[Best Systems Paper Finalist]</highlight2><br>
+                <a href="https://arxiv.org/abs/2109.03891">paper</a> &nbsp/&nbsp
+                <a href="https://openreview.net/forum?id=mOLu2rODIJF">open review</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('corl2021sornetAbs')">abstract</a> &nbsp/&nbsp
+                <a href="https://github.com">code (coming soon)</a> &nbsp/&nbsp
+                <a href="https://wentaoyuan.github.io/sornet">project page</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('corl2021sornetBib')">bibtex</a>
+                </p>
+                <p><em id="corl2021sornetAbs">
+                  Sequential manipulation tasks require a robot to perceive the state of an environment and plan a sequence of actions leading to a desired goal state, where the ability to reason about spatial relationships among object entities from raw sensor inputs is crucial. Prior works relying on explicit state estimation or end-to-end learning struggle with novel objects. 
+                </em></p>
+                <pre id="corl2021sornetBib">
+                  @inproceedings{
+                    yuan2021sornet,
+                    title={SORNet: Spatial Object-Centric Representations for Sequential Manipulation},
+                    author={Wentao Yuan and Chris Paxton and Karthik Desingh and Dieter Fox},
+                    booktitle={5th Annual Conference on Robot Learning },
+                    year={2021},
+                    url={https://openreview.net/forum?id=mOLu2rODIJF}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('corl2021sornetAbs');
+                hideblock('corl2021sornetBib');
+              </script>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td width="25%" valign="top">
                 <p><img src="images/star.gif" width="300"></p>
               </td>
               <td width="75%" valign="top">
                 <p>
                 <papertitle>STaR: Self-supervised Tracking and Reconstruction of Rigid Objects in Motion with Neural Rendering</papertitle><br>
                 <strong>Wentao Yuan</strong>, Zhaoyang Lv, Tanner Schmidt, Steven Lovegrove<br>
-                <em>arXiv</em>, 2021<br>
+                <em>The Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2021<br>
                 <a href="https://arxiv.org/abs/2101.01602">paper</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('cvpr2021starAbs')">abstract</a> &nbsp/&nbsp
                 <a href="https://github.com">code (coming soon)</a> &nbsp/&nbsp
@@ -62,10 +100,11 @@
                   We present STaR, a novel method that performs Self-supervised Tracking and Reconstruction of dynamic scenes with rigid motion from multi-view RGB videos without any manual annotation. Recent work has shown that neural networks are surprisingly effective at the task of compressing many views of a scene into a learned function which maps from a viewing ray to an observed radiance value via volume rendering. Unfortunately, these methods lose all their predictive power once any object in the scene has moved. In this work, we explicitly model rigid motion of objects in the context of neural representations of radiance fields. We show that without any additional human specified supervision, we can reconstruct a dynamic scene with a single rigid object in motion by simultaneously decomposing it into its two constituent parts and encoding each with its own neural representation. We achieve this by jointly optimizing the parameters of two neural radiance fields and a set of rigid poses which align the two fields at each frame. On both synthetic and real world datasets, we demonstrate that our method can render photorealistic novel views, where novelty is measured on both spatial and temporal axes. Our factored representation furthermore enables animation of unseen object motion.
                 </em></p>
                 <pre id="cvpr2021starBib">
-                  @article{yuan2021star,
+                  @inproceedings{yuan2021star,
                     title={STaR: Self-supervised Tracking and Reconstruction of Rigid Objects in Motion with Neural Rendering},
                     author={Yuan, Wentao and Lv, Zhaoyang and Schmidt, Tanner and Lovegrove, Steven},
-                    journal={arXiv preprint arXiv:2101.01602},
+                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+                    pages={13144--13152},
                     year={2021}
                   }
                 </pre>
@@ -73,6 +112,39 @@
               <script language="javascript" type="text/javascript" xml:space="preserve">
                 hideblock('cvpr2021starAbs');
                 hideblock('cvpr2021starBib');
+              </script>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/ssl3d.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>Self-Supervised Learning on 3D Point Clouds by Learning Discrete Generative Models</papertitle><br>
+                Benjamin Eckart, <strong>Wentao Yuan</strong>, Chao Liu, Jan Kautz<br>
+                <em>The Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2021<br>
+                <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Eckart_Self-Supervised_Learning_on_3D_Point_Clouds_by_Learning_Discrete_Generative_CVPR_2021_paper.pdf">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('cvpr2021ssl3dAbs')">abstract</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('cvpr2021ssl3dBib')">bibtex</a>
+                </p>
+                <p><em id="cvpr2021ssl3dAbs">
+                  While recent pre-training tasks on 2D images have proven very successful for transfer learning, pre-training for 3D data remains challenging. In this work, we introduce a general method for 3D self-supervised representation learning that 1) remains agnostic to the underlying neural network architecture, and 2) specifically leverages the geometric nature of 3D point cloud data. The proposed task softly segments 3D points into a discrete number of geometric partitions. A self-supervised loss is formed under the interpretation that these soft partitions implicitly parameterize a latent Gaussian Mixture Model (GMM), and that this generative model establishes a data likelihood function. Our pretext task can therefore be viewed in terms of an encoder-decoder paradigm that squeezes learned representations through an implicitly defined parametric discrete generative model bottleneck. We show that any existing neural network architecture designed for supervised point cloud segmentation can be repurposed for the proposed unsupervised pretext task. By maximizing data likelihood with respect to the soft partitions formed by the unsupervised point-wise segmentation network, learned representations are encouraged to contain compositionally rich geometric information. In tests, we show that our method naturally induces semantic separation in feature space, resulting in state-of-the-art performance on downstream applications like model classification and semantic segmentation.
+                </em></p>
+                <pre id="cvpr2021ssl3dBib">
+                  @inproceedings{eckart2021self,
+                    title={Self-Supervised Learning on 3D Point Clouds by Learning Discrete Generative Models},
+                    author={Eckart, Benjamin and Yuan, Wentao and Liu, Chao and Kautz, Jan},
+                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+                    pages={8248--8257},
+                    year={2021}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('cvpr2021ssl3dAbs');
+                hideblock('cvpr2021ssl3dBib');
               </script>
             </tr>
           </table>
@@ -98,11 +170,13 @@
                   Point cloud registration is a fundamental problem in 3D computer vision, graphics and robotics. For the last few decades, existing registration algorithms have struggled in situations with large transformations, noise, and time constraints. In this paper, we introduce Deep Gaussian Mixture Registration (DeepGMR), the first learning-based registration method that explicitly leverages a probabilistic registration paradigm by formulating registration as the minimization of KL-divergence between two probability distributions modeled as mixtures of Gaussians. We design a neural network that extracts pose-invariant correspondences between raw point clouds and Gaussian Mixture Model (GMM) parameters and two differentiable compute blocks that recover the optimal transformation from matched GMM parameters. This construction allows the network learn an SE(3)-invariant feature space, producing a global registration method that is real-time, generalizable, and robust to noise. Across synthetic and real-world data, our proposed method shows favorable performance when compared with state-of-the-art geometry-based and learning-based registration methods.
                 </em></p>
                 <pre id="eccv2020deepgmrBib">
-                  @article{yuan2020deepgmr,
-                    title={DeepGMR: Learning Latent Gaussian Mixture Models for Registration},
+                  @inproceedings{yuan2020deepgmr,
+                    title={Deepgmr: Learning latent gaussian mixture models for registration},
                     author={Yuan, Wentao and Eckart, Benjamin and Kim, Kihwan and Jampani, Varun and Fox, Dieter and Kautz, Jan},
-                    journal={arXiv preprint arXiv:2008.09088},
-                    year={2020}
+                    booktitle={European Conference on Computer Vision},
+                    pages={733--750},
+                    year={2020},
+                    organization={Springer}
                   }
                 </pre>
               </td>
@@ -149,7 +223,7 @@
           <table>
             <tr>
               <td width="25%" valign="top">
-                <p><img src="images/pcn.png" width="300"></p>
+                <p><img src="images/pcn1.jpg" width="300" onmouseover="this.src='images/pcn2.jpg';" onmouseout="this.src='images/pcn1.jpg';"></p>
               </td>
               <td width="75%" valign="top">
                 <p>
