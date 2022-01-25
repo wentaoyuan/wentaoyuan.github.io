@@ -70,7 +70,7 @@
     </div>
     <br>
 
-    <div class="container">
+    <div class="container grey_container">
       <table align=center width=30%>
         <tr>
           <td align=center width=50%>
@@ -89,28 +89,22 @@
       </table>
     </div>
 
-    <div class="container grey_container">
-      <center><h2 class="sectitle">Overview Video</h2></center>
+    <div class="container">
+      <center><h2 class="sectitle">Overview</h2></center>
+        <p class="text">
+          We present <b>STaR</b>, a novel method that performs <b>S</b>elf-supervised <b>T</b>racking <b>a</b>nd <b>R</b>econstruction of dynamic scenes with rigid motion from multi-view RGB videos.
+        </p>
+        <p class="text">
+          Without any manual annotation, our method can reconstruct a dynamic scene with a single rigid object in motion by simultaneously decomposing it into its two constituent parts and encoding each with its own neural representation. This is achieved by jointly optimizing the parameters of two neural radiance fields and a set of rigid poses which align the two fields at each frame.
+        </p>
+        <p class="text">
+          On both synthetic and real world datasets, we demonstrate that our method can render photorealistic novel views, where novelty is measured on both spatial and temporal axes. Our factored representation furthermore enables animation of unseen object motion.
+        </p>
         <div class="container widget_container">
           <div class="container video_container">
-            <video controls loop autoplay muted class="on">
-              <source src="videos/overview.mp4" type="video/mp4"/>
-            </video>
+            <iframe width=100% height=500 src="https://www.youtube.com/embed/SVBEfOHGyNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-    </div>
-
-    <div class="container">
-      <center><h2 class="sectitle">Abstract</h2></center>
-      <p class="text">
-        We present STaR, a novel method that performs <b>S</b>elf-supervised <b>T</b>racking <b>a</b>nd <b>R</b>econstruction of dynamic scenes with rigid motion from multi-view RGB videos.
-      </p>
-      <p class="text">
-        Without any manual annotation, our method can reconstruct a dynamic scene with a single rigid object in motion by simultaneously decomposing it into its two constituent parts and encoding each with its own neural representation. This is achieved by jointly optimizing the parameters of two neural radiance fields and a set of rigid poses which align the two fields at each frame.
-      </p>
-      <p class="text">
-        On both synthetic and real world datasets, we demonstrate that our method can render photorealistic novel views, where novelty is measured on both spatial and temporal axes. Our factored representation furthermore enables animation of unseen object motion.
-      </p>
     </div>
 
     <div class="container grey_container">
