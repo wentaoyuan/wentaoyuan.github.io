@@ -47,6 +47,40 @@
           <table>
             <tr>
               <td width="25%" valign="top">
+                <p><img src="images/m2t2.gif" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>M2T2: Multi-Task Masked Transformer for Object-centric Pick and Place</papertitle><br>
+                <strong>Wentao Yuan</strong>, Adithyavairavan Murali, Arsalan Mousavian, Dieter Fox<br>
+                <em>The Conference on Robot Learning (CoRL)</em>, 2023<br>
+                <a href="https://arxiv.org/abs/2311.00926">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('corl2023m2t2Abs')">abstract</a> &nbsp/&nbsp
+                <a href="https://github.com/NVlabs/M2T2">code</a> &nbsp/&nbsp
+                <a href="https://m2-t2.github.io">project page</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('corl2023m2t2Bib')">bibtex</a>
+                </p>
+                <p><em id="corl2023m2t2Abs">
+                  With the advent of large language models and large-scale robotic datasets, there has been tremendous progress in high-level decision-making for object manipulation. These generic models are able to interpret complex tasks using language commands, but they often have difficulties generalizing to out-of-distribution objects due to the inability of low-level action primitives. In contrast, existing task-specific models excel in low-level manipulation of unknown objects, but only work for a single type of action. To bridge this gap, we present M2T2, a single model that supplies different types of low-level actions that work robustly on arbitrary objects in cluttered scenes. M2T2 is a transformer model which reasons about contact points and predicts valid gripper poses for different action modes given a raw point cloud of the scene. Trained on a large-scale synthetic dataset with 128K scenes, M2T2 achieves zero-shot sim2real transfer on the real robot, outperforming the baseline system with state-of-the-art task-specific models by about 19% in overall performance and 37.5% in challenging scenes where the object needs to be re-oriented for collision-free placement. M2T2 also achieves state-of-the-art results on a subset of language conditioned tasks in RLBench.
+                </em></p>
+                <pre id="corl2023m2t2Bib">
+                  @inproceedings{yuan2023m2t2,
+                    title={M2T2: Multi-Task Masked Transformer for Object-centric Pick and Place},
+                    author={Yuan, Wentao and Murali, Adithyavairavan and Mousavian, Arsalan and Fox, Dieter},
+                    booktitle={7th Annual Conference on Robot Learning},
+                    year={2023}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('corl2023m2t2Abs');
+                hideblock('corl2023m2t2Bib');
+              </script>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td width="25%" valign="top">
                 <p><img src="images/sornet.gif" width="300"></p>
               </td>
               <td width="75%" valign="top">
@@ -56,7 +90,6 @@
                 <em>The Conference on Robot Learning (CoRL)</em>, 2021 <highlight1>(Oral)</highlight1><br>
                 <highlight2>[Best Systems Paper Finalist]</highlight2><br>
                 <a href="https://arxiv.org/abs/2109.03891">paper</a> &nbsp/&nbsp
-                <a href="https://openreview.net/forum?id=mOLu2rODIJF">open review</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('corl2021sornetAbs')">abstract</a> &nbsp/&nbsp
                 <a href="https://github.com/wentaoyuan/sornet">code</a> &nbsp/&nbsp
                 <a href="https://wentaoyuan.github.io/sornet">project page</a> &nbsp/&nbsp
