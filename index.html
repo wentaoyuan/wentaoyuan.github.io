@@ -24,17 +24,20 @@
           <p align="center">
             <name>Wentao Yuan </name><cname>(&#34945;&#25991;&#38892;)</cname>
           </p>
-          <p>I am a final-year PhD student in the <a href="https://rse-lab.cs.washington.edu">RSE-Lab</a> at the University of Washington, working with Prof. <a href="https://homes.cs.washington.edu/~fox">Dieter Fox</a>. I am interested in developing intelligent systems that enable emobodied agents to perceive and interact with diverse 3D environments.</p>
+          <p>I am looking for full-time research positions in 2024!</p>
+          <p>I am a final-year PhD student in the <a href="https://rse-lab.cs.washington.edu">RSE-Lab</a> at University of Washington, working with Prof. <a href="https://homes.cs.washington.edu/~fox">Dieter Fox</a>. I am interested in developing intelligent systems that enable emobodied agents to perceive and interact with diverse 3D environments.</p>
           <p>Before coming to UW, I obtained my M.S. from the <a href="https://ri.cmu.edu">Robotics Institute</a> at Carnegie Mellon University advised by Prof. <a href="https://cs.cmu.edu/~hebert">Martial Hebert</a>. Before that, I got my B.A. in Computer Science and Mathematics from <a href="https://www.pomona.edu">Pomona College</a>.</p>
           <p align=center>
             <a href="documents/CV.pdf">CV</a> &nbsp/&nbsp
             <a href="https://github.com/wentaoyuan">GitHub</a> &nbsp/&nbsp
             <a href="https://scholar.google.com/citations?user=PZZZG6YAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-            <a href="https://linkedin.com/in/wentaoyuan">LinkedIn</a>
+            <a href="https://linkedin.com/in/wentaoyuan">LinkedIn</a> &nbsp/&nbsp
+            <a href="https://twitter.com/TonyWentaoYuan">Twitter</a>
           </p>
         </td>
         <td width="30%" align="right" class="image_container">
-          <img src="images/profile0.jpg" class="headshot" width=270 onmouseover="this.src='images/profile1.jpg';" onmouseout="this.src='images/profile0.jpg';">
+          <img src="images/profile.jpg" class="headshot" width=270>
+          <!-- onmouseover="this.src='images/profile1.jpg';" onmouseout="this.src='images/profile0.jpg';" -->
         </td>
       </tr>
     </table>
@@ -43,7 +46,7 @@
       <tr>
         <td>
           <hr>
-          <heading>Publications</heading>
+          <heading>Selected Publications</heading>
           <table>
             <tr>
               <td width="25%" valign="top">
@@ -102,7 +105,7 @@
                   @inproceedings{yuan2021sornet,
                     title={SORNet: Spatial Object-Centric Representations for Sequential Manipulation},
                     author={Wentao Yuan and Chris Paxton and Karthik Desingh and Dieter Fox},
-                    booktitle={5th Annual Conference on Robot Learning },
+                    booktitle={5th Annual Conference on Robot Learning},
                     year={2021},
                     url={https://openreview.net/forum?id=mOLu2rODIJF}
                   }
@@ -126,7 +129,6 @@
                 <em>The Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2021<br>
                 <a href="https://arxiv.org/abs/2101.01602">paper</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('cvpr2021starAbs')">abstract</a> &nbsp/&nbsp
-                <a href="https://github.com">code (coming soon)</a> &nbsp/&nbsp
                 <a href="https://wentaoyuan.github.io/star">project page</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('cvpr2021starBib')">bibtex</a>
                 </p>
@@ -146,39 +148,6 @@
               <script language="javascript" type="text/javascript" xml:space="preserve">
                 hideblock('cvpr2021starAbs');
                 hideblock('cvpr2021starBib');
-              </script>
-            </tr>
-          </table>
-          <table>
-            <tr>
-              <td width="25%" valign="top">
-                <p><img src="images/ssl3d.png" width="300"></p>
-              </td>
-              <td width="75%" valign="top">
-                <p>
-                <papertitle>Self-Supervised Learning on 3D Point Clouds by Learning Discrete Generative Models</papertitle><br>
-                Benjamin Eckart, <strong>Wentao Yuan</strong>, Chao Liu, Jan Kautz<br>
-                <em>The Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2021<br>
-                <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Eckart_Self-Supervised_Learning_on_3D_Point_Clouds_by_Learning_Discrete_Generative_CVPR_2021_paper.pdf">paper</a> &nbsp/&nbsp
-                <a href="javascript:toggleblock('cvpr2021ssl3dAbs')">abstract</a> &nbsp/&nbsp
-                <a href="javascript:toggleblock('cvpr2021ssl3dBib')">bibtex</a>
-                </p>
-                <p><em id="cvpr2021ssl3dAbs">
-                  While recent pre-training tasks on 2D images have proven very successful for transfer learning, pre-training for 3D data remains challenging. In this work, we introduce a general method for 3D self-supervised representation learning that 1) remains agnostic to the underlying neural network architecture, and 2) specifically leverages the geometric nature of 3D point cloud data. The proposed task softly segments 3D points into a discrete number of geometric partitions. A self-supervised loss is formed under the interpretation that these soft partitions implicitly parameterize a latent Gaussian Mixture Model (GMM), and that this generative model establishes a data likelihood function. Our pretext task can therefore be viewed in terms of an encoder-decoder paradigm that squeezes learned representations through an implicitly defined parametric discrete generative model bottleneck. We show that any existing neural network architecture designed for supervised point cloud segmentation can be repurposed for the proposed unsupervised pretext task. By maximizing data likelihood with respect to the soft partitions formed by the unsupervised point-wise segmentation network, learned representations are encouraged to contain compositionally rich geometric information. In tests, we show that our method naturally induces semantic separation in feature space, resulting in state-of-the-art performance on downstream applications like model classification and semantic segmentation.
-                </em></p>
-                <pre id="cvpr2021ssl3dBib">
-                  @inproceedings{eckart2021self,
-                    title={Self-Supervised Learning on 3D Point Clouds by Learning Discrete Generative Models},
-                    author={Eckart, Benjamin and Yuan, Wentao and Liu, Chao and Kautz, Jan},
-                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-                    pages={8248--8257},
-                    year={2021}
-                  }
-                </pre>
-              </td>
-              <script language="javascript" type="text/javascript" xml:space="preserve">
-                hideblock('cvpr2021ssl3dAbs');
-                hideblock('cvpr2021ssl3dBib');
               </script>
             </tr>
           </table>
@@ -230,7 +199,7 @@
                 <papertitle>Iterative Transformer Network for 3D Point Cloud</papertitle><br>
                 <strong>Wentao Yuan</strong>, David Held, Christoph Mertz, Martial Hebert<br>
                 <em>CVPR Workshop on 3D Scene Understanding for Vision, Graphics, and Robotics</em>, 2019<br>
-                <a href="https://arxiv.org/pdf/1811.11209">paper</a> &nbsp/&nbsp
+                <a href="https://arxiv.org/abs/1811.11209">paper</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('cvpr19itnetAbs')">abstract</a> &nbsp/&nbsp
                 <a href="https://github.com/wentaoyuan/it-net">code</a> &nbsp/&nbsp
                 <a href="https://drive.google.com/open?id=1ZfFEoUfRHslroKGq3NoI7yJeunjicPUB">poster</a> &nbsp/&nbsp
@@ -265,7 +234,7 @@
                 <strong>Wentao Yuan</strong>, Tejas Khot, David Held, Christoph Mertz, Martial Hebert<br>
                 <em>International Conference on 3D Vision (3DV)</em>, 2018 <highlight1>(Oral)</highlight1><br>
                 <highlight2>[Best Paper Honorable Mention]</highlight2><br>
-                <a href="https://arxiv.org/pdf/1808.00671.pdf">paper</a> &nbsp/&nbsp
+                <a href="https://arxiv.org/abs/1808.00671">paper</a> &nbsp/&nbsp
                 <a href="javascript:toggleblock('3dv18pcnAbs')">abstract</a> &nbsp/&nbsp
                 <a href="https://github.com/wentaoyuan/pcn">code</a> &nbsp/&nbsp
                 <a href="https://wentaoyuan.github.io/pcn">project page</a> &nbsp/&nbsp
@@ -292,7 +261,109 @@
                 hideblock('3dv18pcnBib');
               </script>
             </tr>
+          </table>
+        </td>
+      </tr>
 
+      <tr>
+        <td>
+          <hr>
+          <heading>More Publications</heading>
+          <table>
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/peg-in-hole.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>Evaluating Robustness of Visual Representations for Object Assembly Task Requiring Spatio-Geometrical Reasoning</papertitle><br>
+                Chahyon Ku, Carl Winge, Ryan Diaz, <strong>Wentao Yuan</strong>, Karthik Desingh<br>
+                <em>International Conference on Robotics and Automation (ICRA)</em>, 2024<br>
+                <a href="https://arxiv.org/abs/2310.09943">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('icra2024evalAbs')">abstract</a> &nbsp/&nbsp
+                <a href="https://sites.google.com/view/geometric-peg-in-hole">project page</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('icra2024evalBib')">bibtex</a>
+                </p>
+                <p><em id="icra2024evalAbs">
+                  This paper primarily focuses on evaluating and benchmarking the robustness of visual representations in the context of object assembly tasks. Specifically, it investigates the alignment and insertion of objects with geometrical extrusions and intrusions, commonly referred to as a peg-in-hole task. The accuracy required to detect and orient the peg and the hole geometry in SE(3) space for successful assembly poses significant challenges. Addressing this, we employ a general framework in visuomotor policy learning that utilizes visual pretraining models as vision encoders. Our study investigates the robustness of this framework when applied to a dual-arm manipulation setup, specifically to the grasp variations. Our quantitative analysis shows that existing pretrained models fail to capture the essential visual features necessary for this task. However, a visual encoder trained from scratch consistently outperforms the frozen pretrained models. Moreover, we discuss rotation representations and associated loss functions that substantially improve policy learning. We present a novel task scenario designed to evaluate the progress in visuomotor policy learning, with a specific focus on improving the robustness of intricate assembly tasks that require both geometrical and spatial reasoning.
+                </em></p>
+                <pre id="icra2024evalBib">
+                  @inproceedings{ku2024evaluating,
+                    title={Evaluating Robustness of Visual Representations for Object Assembly Task Requiring Spatio-Geometrical Reasoning},
+                    author={Ku, Chahyon and Winge, Carl and Diaz, Ryan and Yuan, Wentao and Desingh, Karthik},
+                    booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+                    year={2024},
+                    organization={IEEE}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('icra2024evalAbs');
+                hideblock('icra2024evalBib');
+              </script>
+            </tr>
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/racer.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>TerrainNet: Visual Modeling of Complex Terrain for High-speed, Off-road Navigation</papertitle><br>
+                Xiangyun Meng, Nathan Hatch, Alexander Lambert, Anqi Li, Nolan Wagener, Matthew Schmittle, JoonHo Lee, <strong>Wentao Yuan</strong>, Zoey Chen, Samuel Deng, Greg Okopal, Dieter Fox, Byron Boots, Amirreza Shaban<br>
+                <em>Robotics: Science and Systems (RSS)</em>, 2023<br>
+                <a href="https://arxiv.org/abs/2303.15771">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('rss2023terrainAbs')">abstract</a> &nbsp/&nbsp
+                <a href="https://sites.google.com/view/visual-terrain-modeling">project page</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('rss2023terrainBib')">bibtex</a>
+                </p>
+                <p><em id="rss2023terrainAbs">
+                  Effective use of camera-based vision systems is essential for robust performance in autonomous off-road driving, particularly in the high-speed regime. Despite success in structured, on-road settings, current end-to-end approaches for scene prediction have yet to be successfully adapted for complex outdoor terrain. To this end, we present TerrainNet, a vision-based terrain perception system for semantic and geometric terrain prediction for aggressive, off-road navigation. The approach relies on several key insights and practical considerations for achieving reliable terrain modeling. The network includes a multi-headed output representation to capture fine- and coarse-grained terrain features necessary for estimating traversability. Accurate depth estimation is achieved using self-supervised depth completion with multi-view RGB and stereo inputs. Requirements for real-time performance and fast inference speeds are met using efficient, learned image feature projections. Furthermore, the model is trained on a large-scale, real-world off-road dataset collected across a variety of diverse outdoor environments. We show how TerrainNet can also be used for costmap prediction and provide a detailed framework for integration into a planning module. We demonstrate the performance of TerrainNet through extensive comparison to current state-of-the-art baselines for camera-only scene prediction. Finally, we showcase the effectiveness of integrating TerrainNet within a complete autonomous-driving stack by conducting a real-world vehicle test in a challenging off-road scenario.
+                </em></p>
+                <pre id="rss2023terrainBib">
+                  @inproceedings{meng2023terrainnet,
+                    title={Terrainnet: Visual modeling of complex terrain for high-speed, off-road navigation},
+                    author={Meng, Xiangyun and Hatch, Nathan and Lambert, Alexander and Li, Anqi and Wagener, Nolan and Schmittle, Matthew and Lee, JoonHo and Yuan, Wentao and Chen, Zoey and Deng, Samuel and others},
+                    booktitle={Robotics: Science and Systems},
+                    year={2023}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('rss2023terrainAbs');
+                hideblock('rss2023terrainBib');
+              </script>
+            </tr>
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/ssl3d.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>Self-Supervised Learning on 3D Point Clouds by Learning Discrete Generative Models</papertitle><br>
+                Benjamin Eckart, <strong>Wentao Yuan</strong>, Chao Liu, Jan Kautz<br>
+                <em>The Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2021<br>
+                <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Eckart_Self-Supervised_Learning_on_3D_Point_Clouds_by_Learning_Discrete_Generative_CVPR_2021_paper.pdf">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('cvpr2021ssl3dAbs')">abstract</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('cvpr2021ssl3dBib')">bibtex</a>
+                </p>
+                <p><em id="cvpr2021ssl3dAbs">
+                  While recent pre-training tasks on 2D images have proven very successful for transfer learning, pre-training for 3D data remains challenging. In this work, we introduce a general method for 3D self-supervised representation learning that 1) remains agnostic to the underlying neural network architecture, and 2) specifically leverages the geometric nature of 3D point cloud data. The proposed task softly segments 3D points into a discrete number of geometric partitions. A self-supervised loss is formed under the interpretation that these soft partitions implicitly parameterize a latent Gaussian Mixture Model (GMM), and that this generative model establishes a data likelihood function. Our pretext task can therefore be viewed in terms of an encoder-decoder paradigm that squeezes learned representations through an implicitly defined parametric discrete generative model bottleneck. We show that any existing neural network architecture designed for supervised point cloud segmentation can be repurposed for the proposed unsupervised pretext task. By maximizing data likelihood with respect to the soft partitions formed by the unsupervised point-wise segmentation network, learned representations are encouraged to contain compositionally rich geometric information. In tests, we show that our method naturally induces semantic separation in feature space, resulting in state-of-the-art performance on downstream applications like model classification and semantic segmentation.
+                </em></p>
+                <pre id="cvpr2021ssl3dBib">
+                  @inproceedings{eckart2021self,
+                    title={Self-Supervised Learning on 3D Point Clouds by Learning Discrete Generative Models},
+                    author={Eckart, Benjamin and Yuan, Wentao and Liu, Chao and Kautz, Jan},
+                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+                    pages={8248--8257},
+                    year={2021}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('cvpr2021ssl3dAbs');
+                hideblock('cvpr2021ssl3dBib');
+              </script>
+            </tr>
             <tr>
               <td width="25%" valign="top">
                 <p><img src="images/shipwreck.png" width="300"></p>
@@ -332,7 +403,7 @@
       <tr>
         <td>
           <hr>
-          <heading>Projects</heading>
+          <heading>Course Projects</heading>
           <table>
             <tr>
               <td width="50%" valign="top">
@@ -373,13 +444,9 @@
           <hr>
           <heading>Experiences</heading>
           <ul>
-            <li>2023.9 - 2023.12: Research Intern, NVIDIA, Seattle</li>
-            <li>2022.6 - 2022.9: Research Intern, NVIDIA, Seattle</li>
-            <li>2020.6 - 2020.9: Research Intern, Facebook Reality Labs, Redmond</li>
-            <li>2019.9 - present: Graduate Research Assistant, University of Washington</li>
-            <li>2019.6 - 2019.9: Research Intern, NVIDIA, Santa Clara</li>
-            <li>2017.9 - 2019.5: Graduate Research Assistant, Carnegie Mellon University</li>
-            <li>2017.5 - 2017.8: Undergraduate Research Assistant, Harvey Mudd College</li>
+            <li>2021.2 - 2024.5: Research Intern, NVIDIA, Seattle</li>
+            <li>2020.7 - 2020.11: Research Intern, Facebook Reality Labs, Redmond</li>
+            <li>2019.6 - 2019.12: Research Intern, NVIDIA, Santa Clara</li>
             <li>2016.5 - 2016.8: Software Engineering Intern, Google, New York</li>
             <li>2015.5 - 2015.8: Engineering Practicum Intern, Google, Kirkland</li>
           </ul>
