@@ -24,9 +24,7 @@
           <p align="center">
             <name>Wentao Yuan </name><cname>(&#34945;&#25991;&#38892;)</cname>
           </p>
-          <p>I am looking for full-time research positions in 2024!</p>
-          <p>I am a final-year PhD student in the <a href="https://rse-lab.cs.washington.edu">RSE-Lab</a> at University of Washington, working with Prof. <a href="https://homes.cs.washington.edu/~fox">Dieter Fox</a>. I am interested in developing intelligent systems that enable emobodied agents to perceive and interact with diverse 3D environments.</p>
-          <p>Before coming to UW, I obtained my M.S. from the <a href="https://ri.cmu.edu">Robotics Institute</a> at Carnegie Mellon University advised by Prof. <a href="https://cs.cmu.edu/~hebert">Martial Hebert</a>. Before that, I got my B.A. in Computer Science and Mathematics from <a href="https://www.pomona.edu">Pomona College</a>.</p>
+          <p>I am a research scientist at <a href="https://deepmind.google">Google DeepMind</a>. I received my Ph.D. in Computer Science from University of Washington, working with Prof. <a href="https://homes.cs.washington.edu/~fox">Dieter Fox</a>. I am interested in developing intelligent systems that enable emobodied agents to perceive and interact with diverse 3D environments. Before coming to UW, I obtained my M.S. from the <a href="https://ri.cmu.edu">Robotics Institute</a> at Carnegie Mellon University advised by Prof. <a href="https://cs.cmu.edu/~hebert">Martial Hebert</a>. Before that, I got my B.A. in Computer Science and Mathematics from <a href="https://www.pomona.edu">Pomona College</a>.</p>
           <p align=center>
             <a href="documents/CV.pdf">CV</a> &nbsp/&nbsp
             <a href="https://github.com/wentaoyuan">GitHub</a> &nbsp/&nbsp
@@ -338,38 +336,6 @@
           <table>
             <tr>
               <td width="25%" valign="top">
-                <p><img src="images/peg-in-hole.png" width="300"></p>
-              </td>
-              <td width="75%" valign="top">
-                <p>
-                <papertitle>Evaluating Robustness of Visual Representations for Object Assembly Task Requiring Spatio-Geometrical Reasoning</papertitle><br>
-                Chahyon Ku, Carl Winge, Ryan Diaz, <strong>Wentao Yuan</strong>, Karthik Desingh<br>
-                <em>International Conference on Robotics and Automation (ICRA)</em>, 2024<br>
-                <a href="https://arxiv.org/abs/2310.09943">paper</a> &nbsp/&nbsp
-                <a href="javascript:toggleblock('icra2024evalAbs')">abstract</a> &nbsp/&nbsp
-                <a href="https://sites.google.com/view/geometric-peg-in-hole">project page</a> &nbsp/&nbsp
-                <a href="javascript:toggleblock('icra2024evalBib')">bibtex</a>
-                </p>
-                <p><em id="icra2024evalAbs">
-                  This paper primarily focuses on evaluating and benchmarking the robustness of visual representations in the context of object assembly tasks. Specifically, it investigates the alignment and insertion of objects with geometrical extrusions and intrusions, commonly referred to as a peg-in-hole task. The accuracy required to detect and orient the peg and the hole geometry in SE(3) space for successful assembly poses significant challenges. Addressing this, we employ a general framework in visuomotor policy learning that utilizes visual pretraining models as vision encoders. Our study investigates the robustness of this framework when applied to a dual-arm manipulation setup, specifically to the grasp variations. Our quantitative analysis shows that existing pretrained models fail to capture the essential visual features necessary for this task. However, a visual encoder trained from scratch consistently outperforms the frozen pretrained models. Moreover, we discuss rotation representations and associated loss functions that substantially improve policy learning. We present a novel task scenario designed to evaluate the progress in visuomotor policy learning, with a specific focus on improving the robustness of intricate assembly tasks that require both geometrical and spatial reasoning.
-                </em></p>
-                <pre id="icra2024evalBib">
-                  @inproceedings{ku2024evaluating,
-                    title={Evaluating Robustness of Visual Representations for Object Assembly Task Requiring Spatio-Geometrical Reasoning},
-                    author={Ku, Chahyon and Winge, Carl and Diaz, Ryan and Yuan, Wentao and Desingh, Karthik},
-                    booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
-                    year={2024},
-                    organization={IEEE}
-                  }
-                </pre>
-              </td>
-              <script language="javascript" type="text/javascript" xml:space="preserve">
-                hideblock('icra2024evalAbs');
-                hideblock('icra2024evalBib');
-              </script>
-            </tr>
-            <tr>
-              <td width="25%" valign="top">
                 <p><img src="images/racer.png" width="300"></p>
               </td>
               <td width="75%" valign="top">
@@ -428,6 +394,38 @@
               <script language="javascript" type="text/javascript" xml:space="preserve">
                 hideblock('cvpr2021ssl3dAbs');
                 hideblock('cvpr2021ssl3dBib');
+              </script>
+            </tr>
+            <tr>
+              <td width="25%" valign="top">
+                <p><img src="images/peg-in-hole.png" width="300"></p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+                <papertitle>Evaluating Robustness of Visual Representations for Object Assembly Task Requiring Spatio-Geometrical Reasoning</papertitle><br>
+                Chahyon Ku, Carl Winge, Ryan Diaz, <strong>Wentao Yuan</strong>, Karthik Desingh<br>
+                <em>International Conference on Robotics and Automation (ICRA)</em>, 2024<br>
+                <a href="https://arxiv.org/abs/2310.09943">paper</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('icra2024evalAbs')">abstract</a> &nbsp/&nbsp
+                <a href="https://sites.google.com/view/geometric-peg-in-hole">project page</a> &nbsp/&nbsp
+                <a href="javascript:toggleblock('icra2024evalBib')">bibtex</a>
+                </p>
+                <p><em id="icra2024evalAbs">
+                  This paper primarily focuses on evaluating and benchmarking the robustness of visual representations in the context of object assembly tasks. Specifically, it investigates the alignment and insertion of objects with geometrical extrusions and intrusions, commonly referred to as a peg-in-hole task. The accuracy required to detect and orient the peg and the hole geometry in SE(3) space for successful assembly poses significant challenges. Addressing this, we employ a general framework in visuomotor policy learning that utilizes visual pretraining models as vision encoders. Our study investigates the robustness of this framework when applied to a dual-arm manipulation setup, specifically to the grasp variations. Our quantitative analysis shows that existing pretrained models fail to capture the essential visual features necessary for this task. However, a visual encoder trained from scratch consistently outperforms the frozen pretrained models. Moreover, we discuss rotation representations and associated loss functions that substantially improve policy learning. We present a novel task scenario designed to evaluate the progress in visuomotor policy learning, with a specific focus on improving the robustness of intricate assembly tasks that require both geometrical and spatial reasoning.
+                </em></p>
+                <pre id="icra2024evalBib">
+                  @inproceedings{ku2024evaluating,
+                    title={Evaluating Robustness of Visual Representations for Object Assembly Task Requiring Spatio-Geometrical Reasoning},
+                    author={Ku, Chahyon and Winge, Carl and Diaz, Ryan and Yuan, Wentao and Desingh, Karthik},
+                    booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+                    year={2024},
+                    organization={IEEE}
+                  }
+                </pre>
+              </td>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('icra2024evalAbs');
+                hideblock('icra2024evalBib');
               </script>
             </tr>
             <tr>
