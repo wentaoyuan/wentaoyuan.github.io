@@ -32,3 +32,47 @@ jobs:
       - name: Publish website
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Verify published website
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PYTHON'
+          import hashlib
+          import os
+          from pathlib import Path
+          import time
+          import urllib.request
+
+          base_url = os.environ["SITE_URL"].rstrip("/") + "/"
+          revision = os.environ["GITHUB_SHA"]
+          files = [
+              ("", "index.html"),
+              ("documents/CV.pdf", "documents/CV.pdf"),
+              ("images/gemini-2.5.png", "images/gemini-2.5.png"),
+          ]
+          expected = {
+              path: hashlib.sha256(Path(local).read_bytes()).hexdigest()
+              for path, local in files
+          }
+          for attempt in range(12):
+              failures = []
+              for path, local in files:
+                  request = urllib.request.Request(
+                      base_url + path + "?revision=" + revision,
+                      headers={"Cache-Control": "no-cache"},
+                  )
+                  try:
+                      with urllib.request.urlopen(request, timeout=15) as response:
+                          actual = hashlib.sha256(response.read()).hexdigest()
+                      if actual != expected[path]:
+                          failures.append(local + " does not match the deployed file")
+                  except Exception as error:
+                      failures.append(local + ": " + str(error))
+              if not failures:
+                  print("Live homepage, CV, and Gemini thumbnail match the repository.")
+                  break
+              print("Waiting for publication:", "; ".join(failures))
+              if attempt == 11:
+                  raise SystemExit("Published website verification failed.")
+              time.sleep(5)
+          PYTHON
